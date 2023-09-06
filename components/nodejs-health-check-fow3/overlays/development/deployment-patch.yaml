@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-fow3
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/rhtap-demo-hfxz-tenant/e2e-nodejs/nodejs-health-check-fow3@sha256:a0712961f6041cacbff2263259a828f172ce02748f1173cbe32e4304839bb5ba
+        name: my-nodejs
+        resources: {}
+status: {}
